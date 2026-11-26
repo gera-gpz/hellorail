@@ -2,12 +2,12 @@ const express     = require('express');
 const mysql       = require('mysql2/promise');
 
 
-const PORT      = process.env.PORT       || 8082 
-const DBHOST    = process.env.DBHOST     || 'localhost'
-const DBPORT    = process.env.DBPORT     ||  3306
-const DBDATABASE= process.env.DBDATABASE || 'crud'
-const DBUSER    = process.env.DBUSER     || 'root'
-const DBPASSWORD= process.env.DBPASSWORD || ''
+const PORT      = process.env.PORT          || 8082 
+const DBHOST    = process.env.MYSQLHOST     || 'localhost'
+const DBPORT    = process.env.MYSQLPORT     ||  3306
+const DBDATABASE= process.env.MYSQLDATABASE || 'crud'
+const DBUSER    = process.env.MYSQLUSER     || 'root'
+const DBPASSWORD= process.env.MYSQLPASSWORD || ''
 
               
 const pool = mysql.createPool({
