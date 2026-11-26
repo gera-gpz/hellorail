@@ -28,9 +28,9 @@ app.use(express.text());
 
 
 app.get('/usuarios', async (req,res) => { 
-    //  const [rows] = await pool.execute('SELECT * FROM `cusuario`');
-    //  res.json(rows);
-    res.json({mensaje:"Hola"});
+     const [rows] = await pool.execute('SELECT * FROM `cusuario`');
+     res.json(rows);
+    // res.json({mensaje:"Hola"});
 });
 
 
